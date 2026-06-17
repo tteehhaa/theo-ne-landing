@@ -171,6 +171,8 @@ function App() {
               </p>
               <p className="text-xs lg:text-sm font-light leading-relaxed text-charcoal/60">
                 {t.founder.statement}
+              </p>
+               <p className="text-xs lg:text-sm font-light leading-relaxed text-charcoal/60">
                 {t.founder.adds}
               </p>
             </div>
