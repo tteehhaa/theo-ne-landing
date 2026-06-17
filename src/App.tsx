@@ -21,6 +21,7 @@ const content = {
       nameKr: '범하나',
       title: 'CEO · Attorney-at-Law, NY',
       statement: '엔지니어의 정교한 시장 분석력과 뉴욕주 변호사의 국제 법무 전문성을 결합하여, THÉONÉ의 크로스보더 법률 프로젝트 관리(LPM) 및 자산 자문 인프라를 설계하고 조율합니다.',
+      adds: '정보통신산업진흥원 NIPA 글로벌 전문가, 코트라 두바이 무역관 UAE K-MOVE 멘토',
     },
     footer: {
       email: 'contact@theo-ne.com',
@@ -169,6 +170,7 @@ function App() {
               </p>
               <p className="text-xs lg:text-sm font-light leading-relaxed text-charcoal/60">
                 {t.founder.statement}
+                {t.founder.adds}
               </p>
             </div>
           </section>
