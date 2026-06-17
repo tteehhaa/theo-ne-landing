@@ -159,7 +159,7 @@ function App() {
 
           {/* Founder Section - Separated from Service Box */}
           <section className="mb-28">
-            <div className="text-center max-w-md mx-auto">
+            <div className="text-center max-w-lg mx-auto">
               <h4 className="font-serif text-lg lg:text-xl text-charcoal mb-1 tracking-wide">
                 {t.founder.name}
                 {t.founder.nameKr && (
