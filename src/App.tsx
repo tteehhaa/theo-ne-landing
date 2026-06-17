@@ -13,7 +13,7 @@ const content = {
     },
     service: {
       tagline: '"해외 진출을 원하지만, 전담 인력을 채용하기엔 이른 기업을 위한 솔루션입니다. 프로젝트 단위로 운영되는 Fractional 글로벌 비즈니스 PM 시스템이 실행부터 리스크 관리까지 담당합니다."',
-      description: `글로벌 파트너십 구축부터 계약·운영 전반까지, 해외 진출에는 타이밍과 리스크 관리가 전부입니다. 놓치기 쉬운 리스크를 선제적으로 차단하고 실행 속도를 지키는 Fractional 글로벌 비즈니스 PM 시스템을 활용하세요. 생성형 AI의 처리 속도를 기반으로, 뉴욕주 변호사와 국가 공인 글로벌 전문가가 직접 비즈니스 리스크를 검증하는 이중 구조로 작동합니다. 솔루션을 활용할수록 귀사의 비즈니스 맥락에 최적화된 독점적 글로벌 PM 인프라가 축적됩니다. 이것이 저희가 추구하는 플라이휠입니다.`,
+      description: `글로벌 파트너십 구축부터 계약, 운영 전반까지, 해외 진출에는 타이밍과 리스크 관리가 전부입니다. 놓치기 쉬운 리스크를 선제적으로 차단하고 실행 속도를 지키는 Fractional 글로벌 비즈니스 PM 시스템을 활용하세요. 생성형 AI의 처리 속도를 기반으로, 뉴욕주 변호사와 국가 공인 글로벌 전문가가 직접 비즈니스 리스크를 검증하는 이중 구조로 작동합니다. 솔루션을 활용할수록 귀사의 비즈니스 맥락에 최적화된 독점적 글로벌 PM 인프라가 축적됩니다. 이것이 저희가 추구하는 플라이휠입니다.`,
       status: 'Service Opening Soon',
     },
     founder: {
@@ -37,7 +37,7 @@ const content = {
       tagline: 'LEGAL TECH & CROSS-BORDER OPERATIONS',
     },
     service: {
-      tagline: '"Focus on your legal strategy. We manage the global operations."',
+      tagline: '"The ultimate solution for enterprises aspiring for global expansion, yet finding it premature to hire a full-time international department. Our project-based Fractional Global Business PM system commands everything from seamless execution to cross-border risk management."',
       description: `Global Legal PM serves as a high-efficiency 'External International Legal Operations Team' for boutique law firms handling cross-border cases. We manage the entire operational layer—from sourcing and vetting local counsel to fee negotiation, cross-border communication, and milestone tracking.`,
       status: 'Service Opening Soon',
     },
