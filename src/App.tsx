@@ -20,7 +20,7 @@ const content = {
       name: 'HANA BEOM',
       nameKr: '범하나',
       title: 'CEO · Attorney-at-Law, NY',
-      statement: '엔지니어의 정교한 시장 분석력과 뉴욕주 변호사의 국제 법무 전문성을 결합하여, THÉONÉ의 크로스보더 법률 프로젝트 관리(LPM) 및 자산 자문 인프라를 설계하고 조율합니다.',
+      statement: '엔지니어의 정교한 시장 분석력과 뉴욕주 변호사의 국제 법무 전문성을 결합하여, THÉONÉ의 크로스보더 프로젝트 관리(PM) 및 자산 자문 인프라를 설계하고 조율합니다.',
       adds: '정보통신산업진흥원 NIPA 글로벌 전문가, 코트라 두바이 무역관 UAE K-MOVE 멘토',
     },
     footer: {
@@ -47,7 +47,7 @@ This is the flywheel we pursue.`,
       name: 'HANA BEOM',
       nameKr: '',
       title: 'CEO · Attorney-at-Law, NY',
-      statement: 'Merging an engineer\'s sharp eye for market trends with a New York attorney\'s international legal expertise to orchestrate THÉONÉ\'s premium cross-border Legal Project Management (LPM) and strategic asset consulting infrastructure.',
+      statement: 'Merging an engineer\'s sharp eye for market trends with a New York attorney\'s international legal expertise to orchestrate THÉONÉ\'s premium cross-border Project Management (LPM) and strategic asset consulting infrastructure.',
       adds: 'Global Expert, National IT Industry Promotion Agency (NIPA), UAE K-MOVE Mentor, KOTRA Dubai',
     },
     footer: {
