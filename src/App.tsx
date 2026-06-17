@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Globe, Mail, MapPin } from 'lucide-react';
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function App() {
@@ -45,7 +44,7 @@ export default function App() {
       <main className="max-w-4xl mx-auto px-6 py-16 md:py-24 space-y-24 md:space-y-32">
         
         {/* HERO SECTION - MAIN — GLOBAL BUSINESS PM */}
-        <section className="space-y-8 animate-fade-in">
+        <section className="space-y-8">
           <div className="space-y-3">
             <div className="text-xs font-semibold tracking-wider text-neutral-500 uppercase flex items-center space-x-2">
               <span>Main</span>
@@ -95,7 +94,7 @@ export default function App() {
           <div className="pt-6 max-w-3xl space-y-4">
             <p className="text-base md:text-lg text-neutral-300 leading-relaxed font-light">
               {lang === 'KO'
-                ? "글로벌 파트너십 구축부터 계약·운영 전반까지, 해외 진출에는 타이밍과 리스크 관리가 전부입니다."
+                ? "글로벌 파트너십 구축부터 계약·운영 전반까지, 해외 진출에는 타이밍 and 리스크 관리가 전부입니다."
                 : "From building international partnerships to executing cross-border operations, global expansion is entirely about timing and risk mitigation."
               }
             </p>
@@ -157,7 +156,6 @@ export default function App() {
           </div>
 
           <div className="flex flex-col md:flex-row md:items-start gap-8">
-            {/* AVATAR PLACEHOLDER MATCHING LUXURY UX */}
             <div className="flex-shrink-0">
               <div className="w-16 h-16 rounded-full border border-neutral-800 bg-neutral-900 flex items-center justify-between shadow-inner">
                 <span className="text-sm font-bold text-neutral-400 tracking-wider w-full text-center">HB</span>
