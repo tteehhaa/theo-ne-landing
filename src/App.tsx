@@ -38,7 +38,9 @@ const content = {
     },
     service: {
       tagline: '"The ultimate solution for enterprises aspiring for global expansion, yet finding it premature to hire a full-time international department. Our project-based Fractional Global Business PM system commands everything from seamless execution to cross-border risk management."',
-      description: `Global Legal PM serves as a high-efficiency 'External International Legal Operations Team' for boutique law firms handling cross-border cases. We manage the entire operational layer—from sourcing and vetting local counsel to fee negotiation, cross-border communication, and milestone tracking.`,
+      description: `From building international partnerships to executing cross-border operations, global expansion is entirely about timing and risk mitigation.
+Leverage our Fractional Global Business PM system to preemptively neutralize hidden threats and accelerate your speed to market. Operating on a dual-engine architecture, our infrastructure leverages the lightning-fast velocity of Generative AI agents, fortified by the rigorous, hands-on risk verification of NY attorneys and government-certified global experts. The more you utilize the solution, the more your company accumulates a proprietary global PM infrastructure hyper-optimized to your unique business context.
+This is the flywheel we pursue.`,
       status: 'Service Opening Soon',
     },
     founder: {
