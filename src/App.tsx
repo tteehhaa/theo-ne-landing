@@ -12,8 +12,8 @@ const content = {
       tagline: 'LEGAL TECH & CROSS-BORDER OPERATIONS',
     },
     service: {
-      tagline: '"대표님은 법률 전략에 집중하십시오. 해외 프로젝트 운영은 저희가 책임집니다."',
-      description: `Global Legal PM은 해외 사건을 수임하는 부티크 로펌을 위한 고효율 '외부 국제업무팀' 서비스입니다. 해외 로펌 소싱·검증부터 비용 협상, 크로스보더 커뮤니케이션 및 마일스톤 관리까지 크로스보더 프로젝트의 모든 운영 레이어를 전담합니다.`,
+      tagline: '"해외 진출을 원하지만, 전담 인력을 채용하기엔 이른 기업을 위한 솔루션입니다. 프로젝트 단위로 운영되는 Fractional 글로벌 비즈니스 PM 시스템이 실행부터 리스크 관리까지 담당합니다."',
+      description: `글로벌 파트너십 구축부터 계약·운영 전반까지, 해외 진출에는 타이밍과 리스크 관리가 전부입니다. 놓치기 쉬운 리스크를 선제적으로 차단하고 실행 속도를 지키는 Fractional 글로벌 비즈니스 PM 시스템을 활용하세요. 생성형 AI의 처리 속도를 기반으로, 뉴욕주 변호사와 국가 공인 글로벌 전문가가 직접 비즈니스 리스크를 검증하는 이중 구조로 작동합니다. 솔루션을 활용할수록 귀사의 비즈니스 맥락에 최적화된 독점적 글로벌 PM 인프라가 축적됩니다. 이것이 저희가 추구하는 플라이휠입니다.`,
       status: 'Service Opening Soon',
     },
     founder: {
@@ -131,10 +131,10 @@ function App() {
             <div className="max-w-2xl mx-auto">
               <div className="border border-charcoal/10 p-10 lg:p-14 bg-white/50">
                 <h3 className="font-serif text-xl lg:text-2xl text-charcoal mb-6 tracking-wide">
-                  Global Legal PM
+                  GLOBAL BUSINESS PM
                 </h3>
                 <p className="text-[10px] uppercase tracking-wider text-charcoal/50 mb-5">
-                  External International Legal Operations Team
+                  Fractional Global Business Director
                 </p>
 
                 <blockquote className="font-serif text-sm lg:text-base text-charcoal/90 italic mb-6 leading-relaxed">
