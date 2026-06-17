@@ -46,6 +46,7 @@ const content = {
       nameKr: '',
       title: 'CEO · Attorney-at-Law, NY',
       statement: 'Merging an engineer\'s sharp eye for market trends with a New York attorney\'s international legal expertise to orchestrate THÉONÉ\'s premium cross-border Legal Project Management (LPM) and strategic asset consulting infrastructure.',
+      adds: 'Global Expert, National IT Industry Promotion Agency (NIPA), UAE K-MOVE Mentor, KOTRA Dubai',
     },
     footer: {
       email: 'contact@theo-ne.com',
