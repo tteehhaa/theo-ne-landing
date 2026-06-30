@@ -53,19 +53,15 @@
     }
   },
   "innovation": {
-    "title": "Next-Gen Smart Workflow Infrastructure",
-    "notice1": "카이스트 연계 기술 개발 및 시스템 고도화 단계에 있는 차세대 글로벌 워크플로우 제어 인프라를 연구개발 중입니다.",
-    "item1": "해외 진출 과정에서 발생하는 영문 NDA 검토 부담을 줄이기 위한 AI 기반 사전 스크리닝 솔루션을 연구개발 중입니다.",
-    "item2": "글로벌 무역 거래에서 발생하는 이메일 사기 및 송금 리스크를 줄이기 위한 결제 제어 솔루션을 연구개발 중입니다.",
+    "title": "AI 워크플로우 인프라",
+    "notice1": "AI 기반으로 글로벌 거래의 신뢰와 안전을 높이는 리스크 관리 솔루션을 개발하고 있습니다.",
     "notice2": "본 프로젝트의 PoC 참여 및 제휴에 관심 있는 분들의 문의를 받습니다.",
-    "btn": "기술 제휴 및 PoC 참여 문의하기"
+    "btn": "문의하기"
   },
   "international": {
-    "title": "해외 파트너 전용 한국 오퍼레이터 채널",
-    "notice": "한국 내 실무 협력 채널이 필요한 해외 파트너를 위한 트랙입니다.",
-    "inbound": "For international companies entering the Korean market and seeking a reliable local operations partner.",
-    "value": "한국 내 이해관계자와의 커뮤니케이션 조율, 계약 보조, 현지 행정 셋업을 백엔드에서 지원하여 해외 파트너의 한국 시장 안착을 돕습니다.",
-    "btn": "Contact our International Desk / Inquiry"
+    "title": "글로벌 파트너를 위한 한국 운영 채널",
+    "value": "한국 시장 진출을 추진하는 해외 기업을 위한 신뢰할 수 있는 현지 운영 파트너",
+    "btn": "Inquiry"
   },
   "about": {
     "title": "About THÉONÉ",
@@ -89,8 +85,8 @@
       "quick": "Quick Desk 문의",
       "mission": "Mission Desk 문의",
       "project": "Project Desk 문의",
-      "rnd": "기술 제휴 및 R&D (PoC 참여)",
-      "international": "International Desk / Inquiry"
+      "rnd": "문의하기",
+      "international": "Inquiry"
     },
     "success": "문의가 성공적으로 접수되었습니다. 빠른 시일 내에 답변 드리겠습니다.",
     "error": "문의 접수 중 오류가 발생했습니다. 다시 시도해 주세요."
