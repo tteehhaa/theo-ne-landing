@@ -14,7 +14,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-charcoal/10 bg-cream/95 backdrop-blur-sm">
       <div className="container flex h-16 items-center justify-between">
         <a href="/" className="font-bold text-xl tracking-tight" aria-label="THÉONÉ Home">
           THÉONÉ
