@@ -67,4 +67,22 @@
     "founderDesc": "엔지니어 출신의 뉴욕주 변호사로, 기술과 규제를 모두 이해하는 실무 역량을 바탕으로 크로스보더 비즈니스 운영을 지원합니다.",
     "linkedinBtn": "LinkedIn 프로필 보기"
   }
+  "contact": {
+    "title": "도입 및 견적 문의",
+    "formName": "성함",
+    "formCompany": "회사명",
+    "formEmail": "이메일",
+    "formPhone": "연락처",
+    "formType": "문의 유형",
+    "formTypePlaceholder": "문의 유형을 선택해주세요",
+    "formMessage": "문의 내용",
+    "submitBtn": "문의 접수하기",
+    "types": {
+      "quick": "Quick Desk 문의",
+      "mission": "Mission Desk 문의",
+      "project": "Project Desk 문의",
+      "rnd": "AI 워크플로우 연구 문의",
+      "international": "글로벌 파트너십 문의"
+  }
+}
 }
