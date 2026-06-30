@@ -1,15 +1,15 @@
 {
   "nav": {
     "services": "Global Desk Services",
-    "innovation": "Next-Gen Innovation",
-    "international": "International Desk",
+    "innovation": "AI Workflow Infrastructure",
+    "international": "Korea Operator Channel",
     "about": "About THÉONÉ",
     "cta": "Request Quote"
   },
   "hero": {
     "title": "THÉONÉ Global Desk",
     "subtitle": "Cross-border Business Operations",
-    "desc": "There is no need to hire a dedicated global team for every cross-border task. THÉONÉ Global Desk acts as your Fractional Global Operations Team on demand, immediately executing cross-border administration, global partnership coordination, and project management.",
+    "desc": "THÉONÉ Global Desk acts as your Fractional Global Operations Team on demand, immediately executing cross-border administration, global partnership coordination, and project management.",
     "btnServices": "View Services",
     "btnContact": "Request Quote"
   },
@@ -23,8 +23,7 @@
       "items": [
         "Drafting and reviewing official English correspondence for overseas buyers/partners",
         "Refining English presentation materials for global meetings and conference calls",
-        "Establishing administrative guardrails and checklists prior to cross-border contracts",
-        "Basic pooling of local professionals and regional market regulation research"
+        "Establishing administrative guardrails and checklists prior to cross-border contracts"
       ],
       "btn": "Request Quick Desk & Quote"
     },
@@ -35,64 +34,38 @@
       "items": [
         "Overall administrative process and detailed condition coordination for overseas contracts",
         "Analyzing global partner requirements and proposing alternative operations",
-        "Pitching proposals and initial coordination to secure overseas local partners and experts",
-        "Close response to sudden operational bottlenecks and issues during cross-border progress"
+        "Pitching proposals and initial coordination to secure overseas local partners"
       ],
-      "btn": "Consult for Mission Desk"
+      "btn": "Request Mission Desk & Quote"
     },
     "project": {
       "title": "Project Desk | Cross-border Project PMO",
       "badge": "1-3 Months (Project Basis)",
-      "target": "Best for: Milestone management across complex projects involving multiple stakeholders, such as global expansion, investment, and contracts.",
+      "target": "Best for: Milestone management across complex projects involving multiple stakeholders.",
       "items": [
-        "Executing entry strategies for global hubs (e.g., North America, Middle East) and building local operational infrastructure",
+        "Executing entry strategies for global hubs and building local operational infrastructure",
         "Orchestrating global communication throughout overseas investment attraction projects",
         "End-to-end PMO lead from global partner discovery to contract finalization"
       ],
-      "btn": "Request Project Desk Proposal & Quote"
+      "btn": "Request Project Desk & Quote"
     }
   },
   "innovation": {
-    "title": "Next-Gen Smart Workflow Infrastructure",
-    "notice1": "We are developing next-generation global workflow control infrastructure in the R&D stage in collaboration with KAIST.",
-    "item1": "Developing an AI-based pre-screening solution to reduce the administrative burden of reviewing English NDAs during global expansion.",
-    "item2": "Developing a payment control solution to mitigate email fraud and remittance risks in global trade.",
-    "notice2": "We welcome inquiries from those interested in PoC participation and tech partnerships for this project.",
-    "btn": "Inquire about Tech Partnership & PoC"
+    "title": "AI Workflow Infrastructure",
+    "desc": "We are developing AI-driven risk management solutions to enhance trust and safety in global trade.",
+    "btn": "Inquire"
   },
   "international": {
     "title": "Korea Operator Channel for International Partners",
-    "notice": "A dedicated track for international partners needing a practical cooperation channel in Korea.",
-    "inbound": "For international companies entering the Korean market and seeking a reliable local operations partner.",
-    "value": "We help international partners settle in the Korean market by providing backend support for communication coordination with local stakeholders, contract assistance, and local administrative setup.",
-    "btn": "Contact our International Desk / Inquiry"
+    "value": "For international companies entering the Korean market and seeking a reliable local operations partner.",
+    "btn": "Contact our International Desk"
   },
   "about": {
     "title": "About THÉONÉ",
     "identity": "THÉONÉ is a global desk where practitioners who understand both technology and regulations directly execute cross-border business operations.",
-    "compliance": "This service provides business administration and project management (PMO) support, explicitly excluding legal advice, in strict compliance with Article 109 of the Attorney-at-Law Act.",
-    "philosophy": "Complex cross-border operations, in the most practical way.",
+    "compliance": "In strict compliance with Article 109 of the Attorney-at-Law Act, this service provides PMO support, excluding legal advice.",
     "founderName": "Hana Beom",
-    "founderDesc": "A New York-licensed attorney with a software engineering background, supporting cross-border business operations where technology and regulation meet.",
+    "founderDesc": "A New York-licensed attorney with a software engineering background, supporting operations where technology and regulation meet.",
     "linkedinBtn": "View LinkedIn Profile"
-  },
-  "contact": {
-    "title": "Request Quote & Inquiry",
-    "formName": "Name",
-    "formCompany": "Company",
-    "formEmail": "Email",
-    "formPhone": "Phone",
-    "formType": "Inquiry Type",
-    "formMessage": "Message",
-    "submitBtn": "Submit Inquiry",
-    "types": {
-      "quick": "Quick Desk Inquiry",
-      "mission": "Mission Desk Inquiry",
-      "project": "Project Desk Inquiry",
-      "rnd": "Tech Partnership & R&D (PoC)",
-      "international": "International Desk / Inquiry"
-    },
-    "success": "Your inquiry has been successfully submitted. We will get back to you shortly.",
-    "error": "An error occurred while submitting your inquiry. Please try again."
   }
 }
