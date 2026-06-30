@@ -49,7 +49,9 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-24 container mx-auto px-6 max-w-2xl">
       {/* 제목에 font-serif 적용 */}
-      <h2 className="text-3xl font-serif text-center mb-12 tracking-wide text-charcoal">{t('contact.title')}</h2>
+      <h2 className="text-3xl font-serif font-bold text-center mb-12 tracking-wide text-charcoal">
+  {t('contact.title')}
+</h2>
       
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 border border-charcoal/10 p-10 lg:p-14 bg-white/50">
