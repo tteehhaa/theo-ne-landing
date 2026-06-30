@@ -8,16 +8,15 @@
   },
   "hero": {
     "title": "THÉONÉ",
-    "subtitle": "Cross-border Business Operations",
-    "desc": "THÉONÉ Global Desk acts as your Fractional Global Operations Team on demand, immediately executing cross-border administration, global partnership coordination, and project management.",
+    "subtitle": "Your Fractional Global Operations Team",
+    "desc": "There is no need to hire a dedicated global team for every cross-border task. THÉONÉ Global Desk acts as your Fractional Global Operations Team on demand, immediately executing cross-border administration, global partnership coordination, and project management.",
     "btnServices": "View Services",
     "btnContact": "Request Quote"
   },
   "services": {
     "title": "Global Desk Services",
-    "desc": "We focus on core business administration and PMO tasks ready for immediate execution.",
     "quick": {
-      "title": "Quick Desk | Single Global Task Execution",
+      "title": "Quick Desk",
       "badge": "Within 1-2 Business Days",
       "target": "Best for: Resolving immediate bottlenecks in single cross-border operations.",
       "items": [
@@ -25,40 +24,40 @@
         "Refining English presentation materials for global meetings and conference calls",
         "Establishing administrative guardrails and checklists prior to cross-border contracts"
       ],
-      "btn": "Request Quick Desk & Quote"
+      "btn": "Request Quick Desk"
     },
     "mission": {
-      "title": "Mission Desk | Single International Mission",
+      "title": "Mission Desk",
       "badge": "Within 1-2 Weeks",
       "target": "Best for: Delegating an independent international mission from infrastructure setup to completion.",
       "items": [
-        "Overall administrative process and detailed condition coordination for overseas contracts",
+        "Support for administrative processes and condition coordination for overseas contracts",
         "Analyzing global partner requirements and proposing alternative operations",
         "Pitching proposals and initial coordination to secure overseas local partners"
       ],
-      "btn": "Request Mission Desk & Quote"
+      "btn": "Request Mission Desk"
     },
     "project": {
-      "title": "Project Desk | Cross-border Project PMO",
+      "title": "Project Desk",
       "badge": "1-3 Months (Project Basis)",
-      "target": "Best for: Milestone management across complex projects involving multiple stakeholders.",
+      "target": "Best for: Milestone management across complex projects involving multiple stakeholders (expansion, investment, contracts).",
       "items": [
-        "Executing entry strategies for global hubs and building local operational infrastructure",
-        "Orchestrating global communication throughout overseas investment attraction projects",
-        "End-to-end PMO lead from global partner discovery to contract finalization"
+        "Execution strategies for global expansion and local operational infrastructure",
+        "Overall project management for overseas investment attraction",
+        "End-to-end PMO lead for global projects"
       ],
-      "btn": "Request Project Desk & Quote"
+      "btn": "Request Project Desk"
     }
   },
   "innovation": {
-    "title": "AI Workflow Infrastructure",
+    "title": "AI Workflow Research",
     "desc": "We are developing AI-driven risk management solutions to enhance trust and safety in global trade.",
     "btn": "Inquire"
   },
   "international": {
     "title": "Korea Operator Channel for International Partners",
-    "value": "For international companies entering the Korean market and seeking a reliable local operations partner.",
-    "btn": "Contact our International Desk"
+    "value": "A reliable local operations partner for international companies entering the Korean market.",
+    "btn": "Request Quote"
   },
   "about": {
     "title": "About THÉONÉ",
