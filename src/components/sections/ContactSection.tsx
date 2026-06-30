@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { toast } from "sonner"; // shadcn/ui Toast 
+import { toast } from "sonner";
 
 const formSchema = z.object({
   name: z.string().min(2),
@@ -28,7 +28,6 @@ export default function ContactSection() {
     defaultValues: { name: "", company: "", email: "", phone: "", type: "", message: "" },
   });
 
-  // URL 쿼리 파라미터에서 type을 읽어와 Select 기본값으로 세팅
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const typeParam = params.get("type");
@@ -48,11 +47,12 @@ export default function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-24 container mx-auto max-w-3xl">
-      <h2 className="text-3xl font-bold mb-8 text-center">{t('contact.title')}</h2>
+    <section id="contact" className="py-24 container mx-auto px-6 max-w-2xl">
+      {/* 제목에 font-serif 적용 */}
+      <h2 className="text-3xl font-serif text-center mb-12 tracking-wide text-charcoal">{t('contact.title')}</h2>
       
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 border border-charcoal/10 p-10 lg:p-14 bg-white/50">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <FormField control={form.control} name="name" render={({ field }) => (
               <FormItem><FormLabel>{t('contact.formName')}</FormLabel><FormControl><Input {...field} /></FormControl><FormMessage /></FormItem>
@@ -73,9 +73,12 @@ export default function ContactSection() {
           <FormField control={form.control} name="type" render={({ field }) => (
             <FormItem>
               <FormLabel>{t('contact.formType')}</FormLabel>
-              <Select onValueChange={field.onChange} defaultValue={field.value} value={field.value}>
+              <Select onValueChange={field.onChange} value={field.value}>
                 <FormControl>
-                  <SelectTrigger><SelectValue placeholder="Select type" /></SelectTrigger>
+                  <SelectTrigger>
+                    {/* 다국어 placeholder 적용 */}
+                    <SelectValue placeholder={t('contact.formTypePlaceholder')} />
+                  </SelectTrigger>
                 </FormControl>
                 <SelectContent>
                   <SelectItem value="quick">{t('contact.types.quick')}</SelectItem>
@@ -97,7 +100,9 @@ export default function ContactSection() {
             </FormItem>
           )} />
 
-          <Button type="submit" className="w-full">{t('contact.submitBtn')}</Button>
+          <Button type="submit" className="w-full bg-charcoal text-cream hover:bg-[#2a2622] font-serif">
+            {t('contact.submitBtn')}
+          </Button>
         </form>
       </Form>
     </section>
