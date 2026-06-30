@@ -5,19 +5,27 @@ export default function InternationalSection() {
   const { t } = useTranslation();
 
   return (
-    <section id="international" className="py-16 container mx-auto">
-      <div className="max-w-4xl mx-auto border rounded-xl p-8 md:p-12 text-center space-y-6 bg-card">
-        <h2 className="text-2xl font-bold">{t('international.title')}</h2>
-        <p className="text-sm text-muted-foreground">{t('international.notice')}</p>
-        
-        <div className="space-y-4 bg-muted/30 p-6 rounded-lg text-left">
-          <p className="text-sm font-semibold italic text-primary">{t('international.inbound')}</p>
-          <p className="text-sm leading-relaxed">{t('international.value')}</p>
-        </div>
+    <section id="international" className="py-12 container mx-auto px-6">
+      {/* ServiceSection과 동일한 최대 너비 제한 */}
+      <div className="max-w-2xl mx-auto">
+        {/* 테두리, 패딩, 배경색 및 중앙 정렬 구조 통일 */}
+        <div className="border border-charcoal/10 p-10 lg:p-14 bg-white/50 text-center flex flex-col items-center">
+          
+          <h3 className="font-serif text-xl lg:text-2xl text-charcoal mb-6 tracking-wide">
+            {t('international.title')}
+          </h3>
+          
+          <p className="text-xs lg:text-sm font-light leading-relaxed text-charcoal/75 mb-8 max-w-lg">
+            {t('international.value')}
+          </p>
 
-        <a href="?type=international#contact" className="inline-block pt-4">
-          <Button variant="secondary">{t('international.btn')}</Button>
-        </a>
+          <a href="?type=international#contact">
+            <Button className="bg-charcoal text-cream hover:bg-[#2a2622] font-serif px-8">
+              {t('international.btn')}
+            </Button>
+          </a>
+          
+        </div>
       </div>
     </section>
   );
