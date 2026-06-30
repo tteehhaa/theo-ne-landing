@@ -14,15 +14,11 @@ export default function HeroSection() {
         {t('hero.subtitle')}
       </p>
       
-      {/* 
-        가독성을 위해 문장을 의미 단위로 명확하게 구성합니다.
-        줄바꿈이 필요한 지점에서 <br className="hidden md:block" />을 사용하세요.
-      */}
-      <p className="text-base md:text-lg max-w-2xl mx-auto leading-loose text-charcoal/80 mb-12">
-        {t('hero.descPart1')}
-        <br className="hidden md:block" />
-        {t('hero.descPart2')}
-      </p>
+      {/* HTML을 직접 렌더링하여 줄바꿈 제어 */}
+      <p 
+        className="text-base md:text-lg max-w-2xl mx-auto leading-loose text-charcoal/80 mb-12"
+        dangerouslySetInnerHTML={{ __html: t('hero.desc') }} 
+      />
 
       <div className="flex flex-col sm:flex-row justify-center gap-4">
         <a href="#services">
