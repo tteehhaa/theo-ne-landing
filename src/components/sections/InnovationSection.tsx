@@ -10,10 +10,9 @@ export default function InnovationSection() {
         {/* 모든 요소를 중앙 정렬하고 일정한 간격 유지 */}
         <div className="border border-charcoal/10 p-10 lg:p-14 bg-white/50 text-center flex flex-col items-center">
           
-          <h3 className="font-serif text-xl lg:text-2xl text-charcoal mb-6 tracking-wide font-bold">
+          <h2 className="text-3xl font-serif tracking-wide mb-4 text-charcoal">
             {t('innovation.title')}
-          </h3>
-          
+          </h2>
           <p className="text-xs lg:text-sm font-light leading-relaxed text-charcoal/75 mb-8 max-w-lg">
             {t('innovation.desc')}
           </p>
