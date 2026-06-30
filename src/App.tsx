@@ -7,6 +7,7 @@ import InternationalSection from "@/components/sections/InternationalSection";
 import AboutSection from "@/components/sections/AboutSection";
 import ContactSection from "@/components/sections/ContactSection";
 import { Toaster } from "@/components/ui/sonner";
+import './App.css'; // ★ 기존 디자인을 불러오는 마법의 한 줄
 
 function App() {
   return (
