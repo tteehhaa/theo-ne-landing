@@ -15,10 +15,10 @@ export default function HeroSection() {
       </p>
       
       {/* HTML을 직접 렌더링하여 줄바꿈 제어 */}
-      <p 
-        className="text-base md:text-lg max-w-2xl mx-auto leading-loose text-charcoal/80 mb-12"
-        dangerouslySetInnerHTML={{ __html: t('hero.desc') }} 
-      />
+      {/* leading-loose(줄간격)와 whitespace-pre-line(줄바꿈 유지) 적용 */}
+      <p className="text-base md:text-lg max-w-2xl mx-auto leading-loose text-charcoal/80 mb-12 whitespace-pre-line">
+      {t('hero.desc')}
+      </p>
 
       <div className="flex flex-col sm:flex-row justify-center gap-4">
         <a href="#services">
