@@ -13,7 +13,7 @@
   "dependencies": {
     "i18next": "^23.11.5",
     "react-i18next": "^14.1.2",
-    "@hook-form/resolvers": "^3.6.0",
+    "@hookform/resolvers": "^3.6.0",
     "zod": "^3.23.8",
     "@hookform/resolvers": "^3.9.0",
     "@radix-ui/react-accordion": "^1.2.0",
