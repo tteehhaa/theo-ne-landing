@@ -9,9 +9,9 @@ export default function AboutSection() {
         
         {/* 1. About THÉONÉ 섹션 (내용 유지 및 수정) */}
         <div className="border border-charcoal/10 p-10 lg:p-14 bg-white/50 text-center flex flex-col items-center">
-          <h3 className="font-serif text-xl lg:text-2xl text-charcoal mb-6 tracking-wide">
-            {t('about.title')}
-          </h3>
+          <h2 className="text-3xl font-serif font-bold text-center mb-12 tracking-wide text-charcoal">
+  {t('about.title')}
+</h2>
           <div className="space-y-6 flex flex-col items-center">
             <p className="text-sm font-light leading-relaxed text-charcoal/80 max-w-lg">
               {t('about.identity')}
