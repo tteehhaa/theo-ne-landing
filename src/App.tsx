@@ -7,13 +7,14 @@ import InternationalSection from "@/components/sections/InternationalSection";
 import AboutSection from "@/components/sections/AboutSection";
 import ContactSection from "@/components/sections/ContactSection";
 import { Toaster } from "@/components/ui/sonner";
-import './App.css'; // ★ 기존 디자인을 불러오는 마법의 한 줄
+import './App.css';
 
 function App() {
   return (
     <div className="min-h-screen bg-cream text-charcoal font-sans scroll-smooth">
       <Navbar />
-      <main>
+      {/* 섹션 간의 여유를 위해 space-y-12 (간격)와 pb-24 (하단 여백) 추가 */}
+      <main className="space-y-12 pb-24">
         <HeroSection />
         <ServiceSection />
         <InnovationSection />
