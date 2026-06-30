@@ -11,7 +11,7 @@ import './App.css'; // ★ 기존 디자인을 불러오는 마법의 한 줄
 
 function App() {
   return (
-    <div className="min-h-screen bg-cream text-charcoal font-light scroll-smooth">
+    <div className="min-h-screen bg-cream text-charcoal font-sans scroll-smooth">
       <Navbar />
       <main>
         <HeroSection />
