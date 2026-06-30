@@ -1,21 +1,21 @@
 {
   "nav": {
-    "services": "서비스 안내",
-    "innovation": "기술 제휴 및 R&D",
-    "international": "글로벌 파트너십",
-    "about": "회사 소개",
+    "services": "Global Desk Services",
+    "innovation": "AI 워크플로우 인프라",
+    "international": "글로벌 파트너를 위한 한국 운영 채널",
+    "about": "About THÉONÉ",
     "cta": "도입 및 견적 문의"
   },
   "hero": {
     "title": "THÉONÉ Global Desk",
     "subtitle": "필요할 때 함께하는 귀사의 글로벌 운영팀",
-    "desc": "해외 업무가 생길 때마다 매번 글로벌 전담 인력을 채용할 필요는 없습니다. THÉONÉ Global Desk는 필요한 기간 동안 기업의 외부 글로벌 운영팀(Fractional Global Operations Team)으로 참여하여 해외 계약 행정, 글로벌 파트너십 조율, 프로젝트 운영 등 크로스보더 실무를 즉시 실행합니다.",
+    "desc": "해외 업무가 생길 때마다 매번 글로벌 전담 인력을 채용할 필요는 없습니다. THÉONÉ Global Desk는 기업의 외부 글로벌 운영팀으로 참여하여 해외 계약 행정, 파트너십 조율, 프로젝트 관리 등 크로스보더 실무를 즉시 실행합니다.",
     "btnServices": "서비스 범위 보기",
     "btnContact": "도입 및 견적 문의"
   },
   "services": {
     "title": "Global Desk Services",
-    "desc": "즉시 수행 및 수임 가능한 핵심 비즈니스 행정 및 PMO 과업 위주로 노출합니다.",
+    "desc": "즉시 수행 및 수임 가능한 핵심 비즈니스 행정 및 PMO 과업입니다.",
     "quick": {
       "title": "Quick Desk | 단일 글로벌 과업 신속 해결",
       "badge": "1~2 영업일 이내",
@@ -23,10 +23,9 @@
       "items": [
         "해외 바이어/파트너 대상 공식 영문 서신 작성 및 검토",
         "글로벌 미팅·컨퍼런스 콜용 영문 Presentation 자료 정제",
-        "크로스보더 계약 진행 전 행정 가드레일 및 체크리스트 수립",
-        "해외 현지 전문가(변호사·회계사 등) 기초 풀 및 권역별 시장 규제 리서치"
+        "크로스보더 계약 진행 전 행정 가드레일 및 체크리스트 수립"
       ],
-      "btn": "Quick Desk 업무 요청 및 견적 문의하기"
+      "btn": "Quick Desk 문의하기"
     },
     "mission": {
       "title": "Mission Desk | 단일 국제 미션 대행",
@@ -35,60 +34,38 @@
       "items": [
         "해외 계약 체결을 위한 행정 프로세스 전반 및 세부 조건 조율 지원",
         "글로벌 파트너사 요구사항 분석 및 대안 오퍼레이션 제안",
-        "해외 현지 파트너·전문가 섭외 제안서 피칭 및 초기 코디네이션",
-        "크로스보더 진행 중 돌발 이슈 밀착 대응"
+        "해외 현지 파트너 섭외 제안서 피칭 및 초기 코디네이션"
       ],
-      "btn": "Mission Desk 상세 도입 상담하기"
+      "btn": "Mission Desk 문의하기"
     },
     "project": {
       "title": "Project Desk | 크로스보더 프로젝트 총괄 운영",
       "badge": "1~3개월 (프로젝트 단위)",
       "target": "적합한 경우: 글로벌 진출, 투자, 계약 등 복수 이해관계자가 얽힌 복잡한 프로젝트 전반의 마일스톤 관리가 필요한 경우",
       "items": [
-        "북미·중동 권역 등 글로벌 거점 진입 전략 실행 및 로컬 오퍼레이션 인프라 구축",
+        "글로벌 거점 진입 전략 실행 및 로컬 오퍼레이션 인프라 구축",
         "해외 투자 유치 프로젝트 전반의 글로벌 커뮤니케이션 오케스트레이션",
         "글로벌 파트너 발굴부터 계약 체결까지 엔드투엔드 PMO 리드"
       ],
-      "btn": "Project Desk 종합 제안서 및 견적 요청하기"
+      "btn": "Project Desk 문의하기"
     }
   },
   "innovation": {
-    "title": "AI 워크플로우 인프라",
-    "notice1": "AI 기반으로 글로벌 거래의 신뢰와 안전을 높이는 리스크 관리 솔루션을 개발하고 있습니다.",
-    "notice2": "본 프로젝트의 PoC 참여 및 제휴에 관심 있는 분들의 문의를 받습니다.",
+    "title": "AI 워크플로우 인프라 연구",
+    "desc": "AI 기반으로 글로벌 거래의 신뢰와 안전을 높이는 리스크 관리 솔루션을 개발하고 있습니다.",
     "btn": "문의하기"
   },
   "international": {
     "title": "글로벌 파트너를 위한 한국 운영 채널",
     "value": "한국 시장 진출을 추진하는 해외 기업을 위한 신뢰할 수 있는 현지 운영 파트너",
-    "btn": "Inquiry"
+    "btn": "도입 및 견적 문의"
   },
   "about": {
     "title": "About THÉONÉ",
     "identity": "THÉONÉ는 기술과 규제를 모두 이해하는 실무진이 직접 크로스보더 비즈니스 운영을 수행하는 글로벌 데스크입니다.",
     "compliance": "본 서비스는 변호사법 제109조에 저촉되지 않는 범위 내에서, 법률 자문이 아닌 비즈니스 행정 및 프로젝트 운영(PMO) 지원을 제공합니다.",
-    "philosophy": "복잡한 크로스보더 실무를, 가장 실용적인 방식으로.",
     "founderName": "Hana Beom",
     "founderDesc": "엔지니어 출신의 뉴욕주 변호사로, 기술과 규제를 모두 이해하는 실무 역량을 바탕으로 크로스보더 비즈니스 운영을 지원합니다.",
     "linkedinBtn": "LinkedIn 프로필 보기"
-  },
-  "contact": {
-    "title": "도입 및 견적 문의",
-    "formName": "성함",
-    "formCompany": "회사명",
-    "formEmail": "이메일",
-    "formPhone": "연락처",
-    "formType": "문의 유형",
-    "formMessage": "문의 내용",
-    "submitBtn": "문의 접수하기",
-    "types": {
-      "quick": "Quick Desk 문의",
-      "mission": "Mission Desk 문의",
-      "project": "Project Desk 문의",
-      "rnd": "문의하기",
-      "international": "Inquiry"
-    },
-    "success": "문의가 성공적으로 접수되었습니다. 빠른 시일 내에 답변 드리겠습니다.",
-    "error": "문의 접수 중 오류가 발생했습니다. 다시 시도해 주세요."
   }
 }
