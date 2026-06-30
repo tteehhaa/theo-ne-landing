@@ -66,7 +66,7 @@
     "founderName": "Hana Beom",
     "founderDesc": "엔지니어 출신의 뉴욕주 변호사로, 기술과 규제를 모두 이해하는 실무 역량을 바탕으로 크로스보더 비즈니스 운영을 지원합니다.",
     "linkedinBtn": "LinkedIn 프로필 보기"
-  }
+  },
   "contact": {
     "title": "도입 및 견적 문의",
     "formName": "성함",
@@ -83,6 +83,6 @@
       "project": "Project Desk 문의",
       "rnd": "AI 워크플로우 연구 문의",
       "international": "글로벌 파트너십 문의"
+    }
   }
-}
 }
