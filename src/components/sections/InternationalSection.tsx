@@ -11,7 +11,7 @@ export default function InternationalSection() {
         {/* 테두리, 패딩, 배경색 및 중앙 정렬 구조 통일 */}
         <div className="border border-charcoal/10 p-10 lg:p-14 bg-white/50 text-center flex flex-col items-center">
           
-          <h3 className="font-serif text-xl lg:text-2xl text-charcoal mb-6 tracking-wide">
+          <h3 className="font-serif text-xl lg:text-2xl text-charcoal mb-6 tracking-wide font-bold">
             {t('international.title')}
           </h3>
           
