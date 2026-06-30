@@ -1,8 +1,8 @@
 {
   "nav": {
-    "services": "Global Desk",
-    "innovation": "AI Workflow",
-    "international": "Fractional Operator",
+    "services": "Global Desk Services",
+    "innovation": "AI Workflow Infrastructure",
+    "international": "Korea Operator Channel",
     "about": "About THÉONÉ",
     "cta": "Request Quote"
   },
@@ -50,12 +50,12 @@
     }
   },
   "innovation": {
-    "title": "AI Workflow Research",
+    "title": "AI Workflow Infrastructure",
     "desc": "We are developing AI-driven risk management solutions to enhance trust and safety in global trade.",
     "btn": "Inquire"
   },
   "international": {
-    "title": "Fractional Korea Operator for International Partners",
+    "title": "Korea Operator Channel for International Partners",
     "value": "We provide reliable local operational services for international companies entering the Korean market.",
     "btn": "Request Quote"
   },
@@ -66,5 +66,25 @@
     "founderName": "Hana Beom",
     "founderDesc": "A New York-licensed attorney with a software engineering background, supporting operations where technology and regulation meet.",
     "linkedinBtn": "View LinkedIn Profile"
+  },
+  "contact": {
+    "title": "Contact & Quote Request",
+    "formName": "Name",
+    "formCompany": "Company",
+    "formEmail": "Email",
+    "formPhone": "Phone",
+    "formType": "Inquiry Type",
+    "formTypePlaceholder": "Select an inquiry type",
+    "formMessage": "Message",
+    "submitBtn": "Submit Inquiry",
+    "success": "Inquiry sent successfully!",
+    "error": "Failed to send inquiry.",
+    "types": {
+      "quick": "Quick Desk Inquiry",
+      "mission": "Mission Desk Inquiry",
+      "project": "Project Desk Inquiry",
+      "rnd": "AI Workflow Research Inquiry",
+      "international": "Global Partnership Inquiry"
+    }
   }
 }
