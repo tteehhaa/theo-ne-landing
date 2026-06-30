@@ -8,7 +8,7 @@
   },
   "hero": {
     "title": "THÉONÉ",
-    "subtitle": "Your Fractional Global Operations Team",
+    "subtitle": "Your Global Operations Team, On Demand",
     "desc": "There is no need to hire a dedicated team for every cross-border task. \n THÉONÉ Global Desk acts as your fractional operations team \n on demand, executing cross-border administration, \npartnership coordination, and project management.",
     "btnServices": "View Services",
     "btnContact": "Request Quote"
@@ -24,18 +24,18 @@
         "Refining English presentation materials for global meetings and conference calls",
         "Establishing administrative guardrails and checklists prior to cross-border contracts"
       ],
-      "btn": "Request Quick Desk"
+      "btn": "Quick Desk Inquiry"
     },
     "mission": {
       "title": "Mission Desk",
       "badge": "Within 1-2 Weeks",
       "target": "Best for: Delegating an independent international mission from infrastructure setup to completion.",
       "items": [
-        "Support for administrative processes and condition coordination for overseas contracts",
+        "Administrative process management for overseas contract execution",
         "Analyzing global partner requirements and proposing alternative operations",
         "Pitching proposals and initial coordination to secure overseas local partners"
       ],
-      "btn": "Request Mission Desk"
+      "btn": "Mission Desk Inquiry"
     },
     "project": {
       "title": "Project Desk",
@@ -46,7 +46,7 @@
         "Overall project management for overseas investment attraction",
         "End-to-end PMO lead for global projects"
       ],
-      "btn": "Request Project Desk"
+      "btn": "Project Desk Inquiry"
     }
   },
   "innovation": {
@@ -62,7 +62,7 @@
   "about": {
     "title": "About THÉONÉ",
     "identity": "THÉONÉ is a global desk where practitioners who understand both technology and regulations directly execute cross-border business operations.",
-    "compliance": "In strict compliance with Article 109 of the Attorney-at-Law Act, \n this service provides PMO support, excluding legal advice.",
+    "compliance": "This service provides business administration and PMO support, and does not constitute legal advice.",
     "founderName": "Hana Beom",
     "founderDesc": "A New York-licensed attorney with a software engineering background, supporting operations where technology and regulation meet.",
     "linkedinBtn": "View LinkedIn Profile"
