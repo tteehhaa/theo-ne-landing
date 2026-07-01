@@ -6,7 +6,8 @@ export default function HeroSection() {
 
   return (
     <section className="py-24 md:py-32 text-center container mx-auto px-6">
-      <h1 className="text-4xl md:text-6xl font-serif text-charcoal mb-8 tracking-wide">
+      {/* 타이틀 굵게 처리 및 tracking-wide로 여유로운 느낌 부여 */}
+      <h1 className="text-4xl md:text-6xl font-serif font-bold text-charcoal mb-8 tracking-wide">
         {t('hero.title')}
       </h1>
       
@@ -14,10 +15,12 @@ export default function HeroSection() {
         {t('hero.subtitle')}
       </p>
       
-      {/* HTML을 직접 렌더링하여 줄바꿈 제어 */}
-      {/* leading-loose(줄간격)와 whitespace-pre-line(줄바꿈 유지) 적용 */}
-      <p className="text-base md:text-lg max-w-2xl mx-auto leading-loose text-charcoal/80 mb-12 whitespace-pre-line">
-      {t('hero.desc')}
+      {/* 
+        text-balance를 적용하여 기기별 너비에 따라 
+        브라우저가 가장 자연스러운 줄바꿈 지점을 자동으로 결정합니다.
+      */}
+      <p className="text-base md:text-lg max-w-2xl mx-auto leading-relaxed text-charcoal/80 mb-12 text-balance">
+        {t('hero.desc')}
       </p>
 
       <div className="flex flex-col sm:flex-row justify-center gap-4">
