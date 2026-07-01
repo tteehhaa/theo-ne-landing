@@ -10,18 +10,29 @@ export default function InnovationSection() {
         {/* 모든 요소를 중앙 정렬하고 일정한 간격 유지 */}
         <div className="border border-charcoal/10 p-10 lg:p-14 bg-white/50 text-center flex flex-col items-center">
           
-          <h2 className="text-3xl font-serif tracking-wide mb-4 text-charcoal">
+          <h2 className="text-3xl font-serif font-bold tracking-wide mb-4 text-charcoal">
             {t('innovation.title')}
           </h2>
           <p className="text-xs lg:text-sm font-light leading-relaxed text-charcoal/75 mb-8 max-w-lg">
             {t('innovation.desc')}
           </p>
 
-          <a href="?type=rnd#contact">
-            <Button className="bg-charcoal text-cream hover:bg-[#2a2622] font-serif px-8">
-              {t('innovation.btn')}
-            </Button>
-          </a>
+          {/* a 태그를 삭제하고 onClick 이벤트로 스크롤 기능 구현 */}
+          <Button 
+            className="bg-charcoal text-cream hover:bg-[#2a2622] font-serif px-8"
+            onClick={() => {
+              // 문의 유형 저장
+              localStorage.setItem('inquiryType', 'rnd');
+              
+              // 문의 섹션으로 부드럽게 이동
+              const element = document.getElementById('contact');
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+          >
+            {t('innovation.btn')}
+          </Button>
           
         </div>
       </div>
