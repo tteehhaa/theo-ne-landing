@@ -50,17 +50,17 @@
     }
   },
   "innovation": {
-    "title": "AI 워크플로우 연구 & 개발",
+    "title": "AI Workflow Infrastructure",
     "desc": "AI 기반으로 글로벌 거래의 신뢰와 안전을 높이는 리스크 관리 솔루션을 개발하고 있습니다.",
     "btn": "문의하기"
   },
   "international": {
-    "title": "해외 기업을 위한 한국 운영 파트너",
+    "title": "Fractional Operator for International Partners",
     "value": "한국 시장 진출을 추진하는 해외 기업을 위한 신뢰할 수 있는 현지 운영 서비스를 제공합니다.",
     "btn": "도입 및 견적 문의"
   },
   "about": {
-    "title": "회사 소개",
+    "title": "About THÉONÉ",
     "identity": "THÉONÉ는 기술과 규제를 모두 이해하는 실무진이 크로스보더 비즈니스 운영을 수행하는 글로벌 데스크입니다.",
     "compliance": "본 서비스는 변호사법 제109조에 저촉되지 않는 범위 내에서, 법률 자문이 아닌 비즈니스 행정 및 프로젝트 운영(PMO) 지원을 제공합니다.",
     "founderName": "Hana Beom",
