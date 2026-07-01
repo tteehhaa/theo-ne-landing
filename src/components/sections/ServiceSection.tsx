@@ -34,12 +34,22 @@ export default function ServiceSection() {
               </div>
             </CardContent>
             <CardFooter>
-              <a href={`?type=${key}#contact`} className="w-full">
-                <Button className="w-full bg-charcoal text-cream hover:bg-[#2a2622] font-serif transition-colors">
-                  {t(`services.${key}.btn`)}
-                </Button>
-              </a>
-            </CardFooter>
+  <Button 
+    className="w-full bg-charcoal text-cream hover:bg-[#2a2622] font-serif transition-colors"
+    onClick={() => {
+      // 1. 문의 유형을 저장 (나중에 ContactSection에서 읽기 위함)
+      localStorage.setItem('inquiryType', key); 
+      
+      // 2. id="contact" 섹션으로 부드럽게 스크롤
+      const element = document.getElementById('contact');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }}
+  >
+    {t(`services.${key}.btn`)}
+  </Button>
+</CardFooter>
           </Card>
         ))}
       </div>
