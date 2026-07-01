@@ -28,11 +28,24 @@ export default function ContactSection() {
     defaultValues: { name: "", company: "", email: "", phone: "", type: "", message: "" },
   });
 
-  useEffect(() => {
+useEffect(() => {
+    // 1. URL 파라미터 확인 (기존 기능)
     const params = new URLSearchParams(window.location.search);
     const typeParam = params.get("type");
-    if (typeParam) {
-      form.setValue("type", typeParam);
+
+    // 2. localStorage 확인 (새로 추가된 기능)
+    const storedType = localStorage.getItem('inquiryType');
+
+    // 3. 우선순위: URL 파라미터가 있으면 우선 적용, 없으면 localStorage 확인
+    const finalType = typeParam || storedType;
+
+    if (finalType) {
+      form.setValue("type", finalType);
+      
+      // localStorage는 사용 후 즉시 비워야 나중에 다른 페이지 방문 시 영향 없음
+      if (storedType) {
+        localStorage.removeItem('inquiryType');
+      }
     }
   }, [form]);
 
