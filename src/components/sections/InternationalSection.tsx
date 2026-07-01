@@ -6,26 +6,33 @@ export default function InternationalSection() {
 
   return (
     <section id="international" className="py-12 container mx-auto px-6">
-      {/* ServiceSection과 동일한 최대 너비 제한 */}
       <div className="max-w-2xl mx-auto">
-        {/* 테두리, 패딩, 배경색 및 중앙 정렬 구조 통일 */}
         <div className="border border-charcoal/10 p-10 lg:p-14 bg-white/50 text-center flex flex-col items-center">
           
-          <h2 className="text-3xl font-serif tracking-wide mb-4 text-charcoal">
+          <h2 className="text-3xl font-serif font-bold tracking-wide mb-4 text-charcoal">
             {t('international.title')}
           </h2>
 
-          
-          
           <p className="text-xs lg:text-sm font-light leading-relaxed text-charcoal/75 mb-8 max-w-lg">
             {t('international.value')}
           </p>
 
-          <a href="?type=international#contact">
-            <Button className="bg-charcoal text-cream hover:bg-[#2a2622] font-serif px-8">
-              {t('international.btn')}
-            </Button>
-          </a>
+          {/* a 태그 제거 및 onClick 이벤트 적용 */}
+          <Button 
+            className="bg-charcoal text-cream hover:bg-[#2a2622] font-serif px-8"
+            onClick={() => {
+              // 문의 유형 저장
+              localStorage.setItem('inquiryType', 'international');
+              
+              // 문의 섹션으로 부드럽게 이동
+              const element = document.getElementById('contact');
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+          >
+            {t('international.btn')}
+          </Button>
           
         </div>
       </div>
