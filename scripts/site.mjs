@@ -41,6 +41,16 @@ export const VERIFICATION = {
  */
 export const INDEXNOW_KEY = '222366b31a2e7807519875307d2f793e';
 
+/**
+ * Google Analytics 4 measurement ID.
+ *
+ * Public by design — it ships in the page source of every visitor's browser —
+ * so it belongs here as a constant, not in an environment variable like the
+ * search-console tokens above. The tag is emitted only by the prerenderer, so
+ * `npm run dev` traffic never reaches the property.
+ */
+export const GA_MEASUREMENT_ID = 'G-G022YZ9172';
+
 export const OG_IMAGE = {
   path: '/og.png',
   enPath: '/og-en.png',

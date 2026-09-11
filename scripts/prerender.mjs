@@ -16,6 +16,7 @@ import {
   ORIGIN,
   OG_IMAGE,
   ogImagePathFor,
+  GA_MEASUREMENT_ID,
   TAX_ID,
   LINKS,
   VERIFICATION,
@@ -145,6 +146,10 @@ function buildHead(lang) {
   const tag = (s) => `    ${s}`;
 
   return [
+    // Google Analytics 4, first in the managed block so it sits as high in the
+    // head as anything the prerenderer controls.
+    `<script async src="https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}"></script>`,
+    `<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_MEASUREMENT_ID}');</script>`,
     `<title>${esc(M.title)}</title>`,
     `<meta name="description" content="${esc(M.description)}" />`,
     // Let engines quote the page at full length and show a large preview.
