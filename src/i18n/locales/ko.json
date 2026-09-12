@@ -37,7 +37,11 @@
       "cta": "전체 보기 teheranro-ai.com"
     },
     "bridgeTag": "무역보험 서류 준비",
-    "bridgeLabel": "반복되는 일은 제품이 됩니다."
+    "bridgeLabel": "반복되는 일은 제품이 됩니다.",
+    "stage": {
+      "live": "운영 중",
+      "building": "개발 중"
+    }
   },
   "founder": {
     "heading": "대표",

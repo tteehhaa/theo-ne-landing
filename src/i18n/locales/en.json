@@ -36,7 +36,11 @@
       "cta": "All products at teheranro-ai.com"
     },
     "bridgeTag": "Trade insurance paperwork",
-    "bridgeLabel": "Work that repeats becomes a product."
+    "bridgeLabel": "Work that repeats becomes a product.",
+    "stage": {
+      "live": "Live",
+      "building": "Building"
+    }
   },
   "founder": {
     "heading": "Founder",

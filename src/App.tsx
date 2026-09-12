@@ -9,17 +9,15 @@ import ContactSection from "@/components/sections/ContactSection";
 function App() {
   return (
     <div className="theone">
-      <div className="wrap">
-        <Navbar />
-        <main id="top">
-          <HeroSection />
-          <WorkSection />
-          <FounderSection />
-          <FaqSection />
-          <ContactSection />
-        </main>
-        <Footer />
-      </div>
+      <Navbar />
+      <main id="top" className="wrap">
+        <HeroSection />
+        <WorkSection />
+        <FounderSection />
+        <FaqSection />
+        <ContactSection />
+      </main>
+      <Footer />
     </div>
   );
 }

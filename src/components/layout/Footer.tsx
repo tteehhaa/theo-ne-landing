@@ -5,16 +5,19 @@ export default function Footer() {
 
   return (
     <footer>
-      <p>
-        <span>{t('footer.legalName')}</span>
-        <span>{t('footer.ceo')}</span>
-        <span>{t('footer.regNo')}</span>
-      </p>
-      <p>{t('footer.address')}</p>
-      <p>
-        <span>{t('footer.disclaimer')}</span>
-        <span>{t('footer.copyright')}</span>
-      </p>
+      <div className="wrap">
+        <p className="cols">
+          <span className="wordmark">THÉONÉ</span>
+          <span>
+            {t('footer.legalName')} · {t('footer.ceo')} · {t('footer.regNo')}
+          </span>
+          <span>{t('footer.address')}</span>
+        </p>
+        <p className="legal">
+          <span>{t('footer.disclaimer')}</span>
+          <span>{t('footer.copyright')}</span>
+        </p>
+      </div>
     </footer>
   );
 }

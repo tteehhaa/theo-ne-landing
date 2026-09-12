@@ -9,26 +9,30 @@ export default function Navbar() {
 
   return (
     <header>
-      <a className="wordmark" href="#top">THÉONÉ</a>
-      <nav aria-label={t('nav.menuLabel')}>
-        <a className="hide-m" href="#work">{t('nav.work')}</a>
-        <a className="hide-m" href="#founder">{t('nav.founder')}</a>
-        <a href="#contact">{t('nav.contact')}</a>
-        {/* Real links, not a client-side toggle, so each language is its own
-            crawlable URL and the pair can carry hreflang. */}
-        <div className="lang" role="group" aria-label={t('nav.langLabel')}>
-          {LANGS.map((lang) => (
-            <a
-              key={lang}
-              href={pathForLang(lang)}
-              hrefLang={lang}
-              aria-current={current === lang ? 'page' : undefined}
-            >
-              {LABELS[lang]}
-            </a>
-          ))}
-        </div>
-      </nav>
+      <div className="wrap bar">
+        <a className="wordmark" href="#top">THÉONÉ</a>
+        <nav aria-label={t('nav.menuLabel')}>
+          <div className="pills">
+            <a className="pill hide-m" href="#work">{t('nav.work')}</a>
+            <a className="pill hide-m" href="#founder">{t('nav.founder')}</a>
+            <a className="pill" href="#contact">{t('nav.contact')}</a>
+          </div>
+          {/* Real links, not a client-side toggle, so each language is its own
+              crawlable URL and the pair can carry hreflang. */}
+          <div className="lang" role="group" aria-label={t('nav.langLabel')}>
+            {LANGS.map((lang) => (
+              <a
+                key={lang}
+                href={pathForLang(lang)}
+                hrefLang={lang}
+                aria-current={current === lang ? 'page' : undefined}
+              >
+                {LABELS[lang]}
+              </a>
+            ))}
+          </div>
+        </nav>
+      </div>
     </header>
   );
 }

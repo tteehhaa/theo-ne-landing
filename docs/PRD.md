@@ -205,48 +205,74 @@ Search Console에서 별도 색인 요청이 필요하다.
 
 ## 8. 디자인 시스템
 
+**확정 2026-09-11.** 기준 문법은 `design/DESIGN-meta.md`(Meta 커머스 디자인 시스템 추출본)이고,
+theo-ne용 적용 목업은 `design/theo-ne-meta-mockup.html`이다. 이전 종이·괘선 목업(`design/theo-ne-mockup.html`)은
+**문구의 출처로만** 남는다 — 시각은 더 이상 따르지 않는다.
+
 | 토큰 | 값 | 용도 |
 |---|---|---|
-| `--paper` | `#FFFFFF` | 배경 |
-| `--ink` | `#1C2024` | 본문 |
-| `--muted` | `#6A7177` | 보조 텍스트·라벨 |
-| `--rule` | `#E3E6E4` | 구분선 |
-| `--plate` | `#1F4A96` | 배지 배경·포커스 링 |
+| `--canvas` | `#FFFFFF` | 배경 (순백. 크림·종이색 금지) |
+| `--surface-soft` | `#F1F4F7` | 부드러운 카드(기업 지원, 문의) |
+| `--ink-deep` | `#0A1317` | 다크 카드(소프트웨어) 배경, 언어 필 활성, 제목 |
+| `--ink` | `#1C1E21` | 본문 |
+| `--charcoal` | `#444950` | 보조 본문 (히어로 설명, FAQ 답변, 경력 행) |
+| `--steel` | `#5D6C7B` | 아이브로우·푸터·비활성 언어 |
+| `--stone` | `#8595A4` | 법적 고지, 구분점 |
+| `--hairline` / `--hairline-soft` | `#CED0D4` / `#DEE3E9` | 필 테두리 / 카드·행 구분선 |
+| `--plate` | `#1F4A96` | **Teheranro AI Studio 도로명판과 포커스 링에만.** 배경·버튼 금지 |
+| `--success` | `#31A24C` | 제품 상태 `운영 중` 배지 |
 
-- 서체 **Pretendard Variable** (jsDelivr `@v1.3.9` dynamic subset). 본문 17px / 행간 1.75
-- 컨테이너 `max-width: 62rem`, 좌우 여백 2rem (860px 이하 1.5rem)
-- 유일한 브레이크포인트: **860px**
-- 한국어 줄바꿈은 `word-break: keep-all` — 음절 단위로 끊기면 안 된다
+- 서체 **Pretendard Variable** 단일. 스케일 고정: 히어로 64(500) · 디스플레이 48(500) · 헤딩 36(500) · 타이틀 24(500) · 서브타이틀 18 · 본문 16/1.5/−0.16px · 라벨·버튼 14/700/−0.14px · 캡션 12
+- 라운드: 카드 32px(`--r-xxxl`) · FAQ·경력표 16px · 도로명판 6px · **버튼·배지·필은 100px, 절대 각지지 않는다**
+- 버튼: 주CTA = 검정 필 `14px 30px` · 부CTA = 2px 아웃라인 필 `12px 28px` · 3차 = 12% 알파 아웃라인 고스트
+- 컨테이너 `max-width: 80rem`(1280px), 좌우 여백 2.5rem (860px 이하 1.25rem). 섹션 간격 80px(모바일 56px)
+- 유일한 브레이크포인트: **860px** (두 카드 세로 스택, 내비 필 중 문의만 남김)
+- 한국어 줄바꿈 `word-break: keep-all`
+- 그림자 없음. 깊이는 카드 색 대비(soft vs dark)로만 낸다
 
-### 8.1 CSS 범위 규칙
+### 8.0 화면 구조 (확정)
 
-목업 CSS는 `header`·`nav`·`section`·`h2`·`footer`·`details` 같은 태그 선택자를 쓴다.
-이를 그대로 두면 `src/components/ui/*`(shadcn)까지 번진다. **모든 규칙은 페이지 루트 클래스
-`.theone` 아래로 한정한다.** 전역에 남기는 것은 `:root` 커스텀 프로퍼티와 `html`/`body` 리셋뿐이다.
+- **header**: 64px 스티키 흰 바. 워드마크 · 필 탭 내비(하는 일/대표/문의) · KO|EN 세그먼트 필(현재 언어 다크 채움)
+- **hero**: 아이브로우 `(주)테오네 · THÉONÉ Inc.` → h1 = 핵심 문장 64px → 설명(FAQ 1번 답변 재사용) → 검정 `문의하기` + 아웃라인 `하는 일`
+- **#work**: h2 `하는 일` 48px + 설명(FAQ 3번 답변 재사용) → 두 카드(좌 `surface-soft` 기업 지원 / 우 `ink-deep` 소프트웨어 + 도로명판 배지 + 상태 배지) → 연결 행(칩 `무역보험 서류 준비` — 선 — `반복되는 일은 제품이 됩니다.`)
+- **#founder**: 이름 36px + 직위 → 경력 5행 괘선 표(16px 라운드) → LinkedIn 고스트 필
+- **#faq**: 16px 라운드 카드 아코디언, 첫 문항 열림. 네이티브 `<details>`
+- **#contact**: `surface-soft` 32px 카드 안에 이메일(36px) + 검정 `문의하기`
+- **footer**: 워드마크 · 법인정보 한 줄 · 주소 · 고지·저작권(12px stone)
 
----
+### 8.2 금지 목록
+
+보라-파랑 그라데이션 · 크림/종이색 배경 · 세리프 제목 · 이모지 아이콘 · 각진 버튼 · 카드 그림자 · 스톡 사진(사진은 직접 촬영본만, 없으면 넣지 않는다) · 코발트를 배경·버튼에 쓰는 것 · 레퍼런스 섞기
 
 ## 9. 인터랙션과 접근성
 
-### 9.1 진입 애니메이션 (#work)
+### 9.1 모션 (확정 2026-09-11)
 
-두 축이 원근에서 제자리로 들어오고, 좌→우 연결선이 그려진 뒤, 태그가 선을 따라 이동해
-TROPS 행을 잠깐 강조한다. 두 축이 인과로 이어져 있음을 보여주는 장치다.
+평면 문법 안에서, 브랜드가 드러나는 지점 세 곳에만 연출을 둔다. 나머지는 150–250ms 상태 전환이다.
+
+| 지점 | 연출 | 구현 |
+|---|---|---|
+| 히어로 로드 | 아이브로우 → 제목 → 설명 → 버튼이 90ms 간격으로 18px 아래에서 올라옴 (0.6s) | 순수 CSS `.rise` + `--i` 지연. 하이드레이션을 기다리지 않는다 |
+| #work 진입 | 두 카드 20px 상승(0.7s, 우측 0.1s 지연) → **도로명판이 1.35배·−6°에서 도장처럼 안착**(0.45s, 0.7s 뒤) → 칩 낙하 → 선이 좌→우로 그려짐(0.7s) → 화살촉 → 라벨 등장 | `useReveal` IntersectionObserver → React state `go` |
+| 다크 카드 호버 | 커서를 따라 코발트 빛(`rgba(31,74,150,.45)` 반경 420px)이 번짐 — 브랜드 색을 '빛'으로만 쓴다 | `--mx/--my` 포인터 좌표, `(hover: hover) and (pointer: fine)`에서만 |
+| 대표·FAQ·문의 | 섹션 20px 상승 페이드, 경력 행·FAQ 카드는 60ms 간격 스태거 | `useReveal` + `--i` |
+| FAQ 열기 | 답변 4px 상승 페이드 0.25s | `details[open] p` 키프레임 |
+| 호버 | 주CTA→차콜, 부CTA→반전, 필→소프트 배경, 도로명판→1px 상승+코발트 링 | 0.15s |
 
 구현 제약:
-- 실행 상태(`go`)는 **React state**로 관리한다. DOM에 클래스를 직접 붙이면 재렌더가 지운다
-- 애니메이션이 명령형으로 쓰는 값(`--len`, `--mx`, `--my`, SVG `viewBox`/`d`/`points`)은
-  React가 prop으로 제어하지 않는 속성이어야 한다
-- 860px 이하에서는 연결선을 숨기고(`display:none`) 라벨만 남긴다
+- 실행 상태(`go`)는 **React state**로 관리한다(`src/hooks/use-reveal.ts`). DOM에 클래스를 직접 붙이면 재렌더가 지운다
+- 모든 시작 상태(`transform`/`opacity`)는 `<html class="js">` 아래, `prefers-reduced-motion: no-preference` 안에만 둔다. JS를 실행하지 않는 클라이언트는 완성 상태를 본다
+- 860px 이하에서는 연결 행의 선만 숨기고 칩과 라벨은 남긴다. 코발트 빛은 터치 기기에 없다
+- 그림자·원근 회전·SVG 패스 애니메이션 금지
 
 ### 9.2 `prefers-reduced-motion: reduce`
 
 애니메이션 CSS 전체가 `@media (prefers-reduced-motion: no-preference)` 안에 있다.
-감소 설정에서는 **처음부터 완성 상태**로 보이며, 태그 이동도 실행하지 않는다. `scroll-behavior`도 `auto`.
+감소 설정에서는 **처음부터 완성 상태**로 보인다. `scroll-behavior`도 `auto`.
 
 ### 9.3 기타
 
-- 포커스 링: `2px solid var(--plate)`, offset 4px
+- 포커스 링: `2px solid var(--plate)`, offset 3px, 필 모양
 - FAQ는 네이티브 `<details>` — JS 없이 동작하고 닫힌 상태에서도 내용이 DOM에 있다
 - 내비게이션·언어 그룹에 `aria-label`, 각 섹션에 `aria-labelledby`
 
@@ -316,7 +342,7 @@ Vite + React 18 + TypeScript          SPA로 개발
 | C1 | 법률 자문·계약서 법률 검토·분쟁 대응·채권 추심을 한다고 표기 금지 | 법인의 업무가 아님. 푸터 고지와 FAQ에 명시 |
 | C2 | `hanabeomlaw.com` 언급·링크 금지 | 대표 개인 사업. 법인 사이트 범위 밖 |
 | C3 | Teheranro AI Studio를 별도 회사처럼 표기 금지 | 법인의 브랜드. 계약·결제 주체는 (주)테오네 |
-| C4 | 목업(`design/theo-ne-mockup.html`)에 없는 문구 임의 생성 금지 | 확정된 카피만 사용 |
+| C4 | 로케일 파일(`src/i18n/locales/*.json`)에 없는 문구 임의 생성 금지. 목업(`design/theo-ne-mockup.html`)이 문구의 원출처 | 확정된 카피만 사용. 2026-09-11 추가된 `work.stage.live/building`(운영 중/개발 중)은 teheranro-ai.com의 STAGES 문구를 그대로 가져온 것 |
 | C5 | 언어 전환을 JS 텍스트 치환으로 구현 금지 | 크롤러가 한 언어만 보게 됨 |
 | C6 | 기존 소유확인 토큰 제거 금지 | 이전 속성의 소유권이 만료됨 |
 
