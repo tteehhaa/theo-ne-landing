@@ -95,7 +95,7 @@ footer        법인 정보 · 고지
 
 **#founder**
 - 성명 + 직위, 경력 5행, LinkedIn 링크
-- 수상·선정은 `KAIST OverEdge 100인 선정` 1건만 `Person.award`로 모델링
+- 수상·선정은 `KAIST OverEdge 50인 선정` 1건만 `Person.award`로 모델링
 
 **#faq** — 5문항 고정. AI 인용 단위이므로 각 답변은 단독으로 완결되어야 한다
 1. (주)테오네는 어떤 회사인가요?
