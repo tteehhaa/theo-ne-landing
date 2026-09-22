@@ -14,6 +14,20 @@ import { clientIp, geoFrom, isBot, parseUa, clamp } from './_lib/request.js';
 const ALLOWED_EVENTS = new Set(['pageview', 'section', 'click', 'exit']);
 const MAX_EVENTS_PER_REQUEST = 40;
 
+/**
+ * Addresses whose visits are never recorded — the operator's own, normally.
+ *
+ * This backs up the per-browser opt-out the client honours: a new phone or a
+ * reinstalled browser is covered without having to remember to switch it off
+ * there. Comma- or whitespace-separated; empty means the check does nothing.
+ */
+const EXCLUDED_IPS = new Set(
+  (process.env.ANALYTICS_EXCLUDE_IPS ?? '')
+    .split(/[,\s]+/)
+    .map((ip) => ip.trim())
+    .filter(Boolean)
+);
+
 /** sendBeacon posts a Blob, so a pre-parsed `req.body` is not guaranteed. */
 async function readJson(req) {
   if (req.body && typeof req.body === 'object') return req.body;
@@ -47,10 +61,15 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'bad_request' });
   }
 
+  const ip = clientIp(req);
+  // 204, not 403: the browser asked to record something and the answer is
+  // "done". Telling it otherwise would only produce console noise.
+  if (ip && EXCLUDED_IPS.has(ip)) return res.status(204).end();
+
   const ua = req.headers['user-agent'] ?? '';
   const { device, browser, os } = parseUa(ua);
   const geo = geoFrom(req);
-  const ip_hash = hashIp(clientIp(req));
+  const ip_hash = hashIp(ip);
   const bot = isBot(ua);
   const now = Date.now();
 

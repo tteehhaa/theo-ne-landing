@@ -13,6 +13,16 @@
 
 const ENDPOINT = '/api/collect';
 
+/**
+ * Per-browser opt-out. The operator's own visits would otherwise sit in their
+ * own dashboard and drown the handful of real ones.
+ *
+ * The admin page writes this same key — it is served from the same origin, so
+ * toggling it there silences the landing page too. Change it in one place and
+ * the other stops matching, so `public/admin/app.js` names it as well.
+ */
+const OPT_OUT_KEY = 'theone.optout';
+
 /** How much of a section must be on screen before it counts as being read. */
 const VISIBLE_RATIO = 0.4;
 
@@ -155,6 +165,37 @@ function watchSections(): void {
   for (const el of targets.keys()) observer.observe(el);
 }
 
+function optedOut(): boolean {
+  try {
+    return localStorage.getItem(OPT_OUT_KEY) === '1';
+  } catch {
+    // Storage blocked. Opting out is impossible to read, so measure as usual.
+    return false;
+  }
+}
+
+/**
+ * `?no-track` silences this browser for good, `?track` undoes it. The admin
+ * page has a switch for the same thing; this is the way in on a device where
+ * signing in first is more trouble than it is worth.
+ *
+ * Returns true when the visit should not be measured.
+ */
+function applyOptOutFromUrl(): boolean {
+  const params = new URLSearchParams(location.search);
+  try {
+    if (params.has('no-track')) {
+      localStorage.setItem(OPT_OUT_KEY, '1');
+      return true;
+    }
+    if (params.has('track')) localStorage.removeItem(OPT_OUT_KEY);
+  } catch {
+    // Nothing to do: without storage the choice cannot be remembered anyway.
+    return params.has('no-track');
+  }
+  return false;
+}
+
 /** Which contact route a visitor actually took is the clearest conversion signal. */
 function clickLabel(href: string): string {
   if (href.startsWith('mailto:')) return 'email';
@@ -196,6 +237,7 @@ export function initAnalytics(): void {
   if (typeof window === 'undefined') return;
   if (/^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname)) return;
   if (navigator.webdriver) return;
+  if (applyOptOutFromUrl() || optedOut()) return;
 
   sessionId = makeSessionId();
 

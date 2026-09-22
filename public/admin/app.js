@@ -406,6 +406,35 @@ $('logout').addEventListener('click', async () => {
   show('login');
 });
 
+/**
+ * Per-browser opt-out, sharing its key with src/lib/analytics.ts. The admin
+ * page and the landing page are the same origin, so what is set here is what
+ * the collector reads over there.
+ */
+const OPT_OUT_KEY = 'theone.optout';
+
+function readOptOut() {
+  try {
+    return localStorage.getItem(OPT_OUT_KEY) === '1';
+  } catch {
+    return false;
+  }
+}
+
+$('optout').checked = readOptOut();
+$('optout').addEventListener('change', (e) => {
+  try {
+    if (e.target.checked) localStorage.setItem(OPT_OUT_KEY, '1');
+    else localStorage.removeItem(OPT_OUT_KEY);
+  } catch {
+    // Private browsing: the choice cannot be remembered, so say so rather than
+    // leaving a checked box that does nothing.
+    e.target.checked = false;
+    $('dash-msg').textContent =
+      '이 브라우저는 저장소가 막혀 있어 설정을 기억할 수 없습니다. 주소 뒤에 ?no-track 을 붙여 접속해 주세요.';
+  }
+});
+
 $('refresh').addEventListener('click', load);
 $('range').addEventListener('change', load);
 $('bots').addEventListener('change', load);
