@@ -7,6 +7,10 @@
 
 User-agent: *
 Allow: /
+# The admin dashboard and its API are for the operator, not for crawlers.
+# They are password protected either way; this keeps them out of indexes too.
+Disallow: /admin
+Disallow: /api/
 
 # --- OpenAI / ChatGPT ---
 User-agent: GPTBot

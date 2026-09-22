@@ -4,6 +4,7 @@ import { I18nextProvider } from 'react-i18next';
 import App from './App.tsx';
 import './index.css';
 import { createI18n, langFromPath } from './i18n';
+import { initAnalytics } from './lib/analytics';
 
 const container = document.getElementById('root')!;
 
@@ -22,3 +23,7 @@ if (container.firstElementChild) {
 } else {
   createRoot(container).render(app);
 }
+
+// 렌더가 끝난 뒤에 붙습니다. 섹션 엘리먼트가 아직 없으면 체류 시간을 관측할
+// 대상을 찾지 못하기 때문입니다.
+requestAnimationFrame(() => initAnalytics());

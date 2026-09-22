@@ -8,3 +8,12 @@ ai-search-report.json
 ai-search-report.png
 .vercel
 .bkit/
+
+# Local environment files. .env.example is the committed template.
+.env
+.env.*
+!.env.example
+.playwright-mcp/
+
+# Supabase CLI local state (project link, version cache).
+supabase/.temp/
