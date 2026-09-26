@@ -83,13 +83,13 @@ export const META = {
     locale: 'ko_KR',
     title: '(주)테오네 THÉONÉ Inc.',
     description:
-      '(주)테오네는 기업의 해외 거래를 돕고, 반복되는 일은 Teheranro AI Studio 브랜드의 소프트웨어로 만듭니다.',
+      '(주)테오네는 중소기업과 창업 기업의 해외 거래·수출을 돕고, 반복되는 일은 Teheranro AI Studio 브랜드의 소프트웨어로 만듭니다.',
     siteName: '(주)테오네 THÉONÉ Inc.',
     ogImageAlt:
       '(주)테오네 THÉONÉ Inc. 기업의 해외 거래를 돕고, 반복되는 일은 소프트웨어로 만듭니다.',
     orgName: '(주)테오네',
     orgAlternateName: 'THÉONÉ Inc.',
-    orgDescription: '기업의 해외 거래를 돕고, 반복되는 일은 소프트웨어로 만드는 회사',
+    orgDescription: '중소기업의 해외 거래와 수출을 돕고, 반복되는 일은 소프트웨어로 만드는 회사',
     streetAddress: '봉은사로 524, B층 269-11호',
     addressLocality: '강남구',
     addressRegion: '서울특별시',
@@ -103,14 +103,14 @@ export const META = {
     locale: 'en_US',
     title: 'THÉONÉ Inc.',
     description:
-      'THÉONÉ Inc. helps companies trade overseas, and turns the work that repeats into software under the brand Teheranro AI Studio.',
+      'THÉONÉ Inc. helps small and mid-sized companies and startups trade overseas, and turns the work that repeats into software under the brand Teheranro AI Studio.',
     siteName: 'THÉONÉ Inc.',
     ogImageAlt:
       'THÉONÉ Inc. We help companies trade overseas, and turn the work that repeats into software.',
     orgName: 'THÉONÉ Inc.',
     orgAlternateName: '(주)테오네',
     orgDescription:
-      'A company that helps businesses trade overseas and turns the work that repeats into software',
+      'A company that helps small and mid-sized businesses trade overseas and turns the work that repeats into software',
     // Decomposed from the mockup's own English footer line — no new wording.
     streetAddress: '524 Bongeunsa-ro, B269-11',
     addressLocality: 'Gangnam-gu',
